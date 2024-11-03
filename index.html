@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Ular</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img src="pahala.png" alt="Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <button id="startBtn" aria-label="Mulai permainan">Mulai</button>
+          </li>
+          <li>
+            <button id="pauseBtn" disabled aria-label="Jeda permainan">
+              Jeda
+            </button>
+          </li>
+          <li>
+            <label for="modeSelect">Pilih Mode:</label>
+            <select id="modeSelect" aria-label="Pilih mode terang atau gelap">
+              <option value="light">Mode Terang</option>
+              <option value="dark">Mode Gelap</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <h1>Game Ular | Pahala Devops</h1>
+      <canvas id="snakeGame" width="400" height="400"></canvas>
+      <div class="controls">
+        <p>Gunakan tombol:</p>
+        <p>
+          <strong>A</strong>: Kiri, <strong>W</strong>: Atas,
+          <strong>D</strong>: Kanan, <strong>S</strong>: Bawah
+        </p>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
